@@ -12,7 +12,8 @@ default: &default
 development:
   <<: *default
   database: effortless_development
-  username: mysite
+  username: effortless_dev_u
+  password: 1234
   host: localhost
   port: 5432
 
