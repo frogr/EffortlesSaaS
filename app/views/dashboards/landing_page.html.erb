@@ -1,1 +1,18 @@
 <h1> Hey </h1>
+
+
+
+<h2> Dev tools </h2>
+
+Sign up for the email letter:<br>
+<%= form_with(url: '/email_signup', method: :post) do |f| %>
+  <%= f.email_field :email, placeholder: 'Enter your email' %>
+  <%= f.submit 'Submit' %>
+<% end %>
+<br>
+Go to our buy page:<br>
+<a href="/buy">Link</a>
+<br>
+Go to our contact or about pages:<br>
+<a href="/contact">
+<br>
