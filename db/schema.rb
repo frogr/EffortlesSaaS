@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_28_015933) do
+ActiveRecord::Schema[7.0].define(version: 2023_02_28_022426) do
+  create_table "customers", force: :cascade do |t|
+    t.string "email_address"
+    t.boolean "has_purchased"
+    t.boolean "has_email_consent"
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "dashboards", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
