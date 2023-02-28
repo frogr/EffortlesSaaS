@@ -10,7 +10,7 @@ services:
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
-      - key: DATABASE_URL
+      - key: DB_INTERNAL_URL
         fromDatabase:
           name: effortless
           property: postgres://effortless_user:wx0gNOvFDq2BPb84bBd5Pqp9rxc12Swk@dpg-cfun1ehmbjsj9alqd01g-a/effortless
