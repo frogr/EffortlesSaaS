@@ -12,6 +12,5 @@ services:
     envVars:
       - key: DATABASE_URL
         fromDatabase: effortless
-          property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
