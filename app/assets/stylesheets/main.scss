@@ -2,3 +2,13 @@ $font-url: 'https: //fonts.googleapis.com/css2?family=Montserrat:wght@100;200;30
 
 @import 'semantic-ui';
 
+body {
+  margin: 0px;
+  background-color: #1B1C1D;
+}
+
+.nav {
+  margin: 0px; 
+  padding: 0px;
+  color: red;
+}

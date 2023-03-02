@@ -1,29 +1,69 @@
-<div class="ui secondary  menu">
-  <a class="active item">
-    Home
-  </a>
-  <a class="item">
-    Buy Now
-  </a>
+
+
+<div class="ui inverted nav">
+  <div class="ui inverted menu">
+    <a class="active item">
+      Home
+    </a>
+    <a class="item">
+      Buy Now
+    </a>
+  </div>
+  <div class="ui inverted vertical masthead center aligned segment">
+    <div class="ui text container">
+      <h1 class="ui inverted header">
+        <div class="content">
+          LEARN TO CODE.
+        </div>
+      </h1>
+      <h2> I'll show you how! </h2>
+      <div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
+    </div>
+  </div>
 </div>
 
 
-<h1> Hey </h1>
+<div class="ui inverted center aligned segment">
+  <div class="ui container">
+    <div class="content">
+      How can I get started as a developer? 
+      How can I earn the salary I'm worth?
+      Is it hard?
+      Is there math involved?
+      Am I too old to learn?
+    </div>
+  </div>
+</div>
+
+<div class="ui inverted center aligned segment">
+  <div class="ui text container">
+    <p>The answer?<br>
+    <b>LEARN TO CODE.</b></p>
+
+    <p>It's not as hard as you think!</p>
+  </div>
+</div>
 
 
 
 
-<h2> Dev tools </h2>
 
-Sign up for the email letter:<br>
-<%= form_for(Customer.new) do |f| %>
-  <%= f.email_field :email_address, placeholder: 'Enter your email' %>
-  <%= f.submit 'Submit' %>
-<% end %>
-<br>
-Go to our buy page:<br>
-<a href="/buy">Link</a>
-<br>
-Go to our contact or about pages:<br>
-<a href="/contact">
-<br>
+
+<div class="ui inverted segment">
+  <div class="content">
+    <h2> Dev tools </h2>
+    Sign up for the email letter:<br>
+    <%= form_for(Customer.new) do |f| %>
+      <%= f.email_field :email_address, placeholder: 'Enter your email' %>
+      <%= f.submit 'Submit' %>
+    <% end %>
+    <br>
+    Go to our buy page:<br>
+    <a href="/buy">Link</a>
+    <br>
+    Go to our contact or about pages:<br>
+    <a href="/contact">
+    <br>
+  </div>
+</div>
+
