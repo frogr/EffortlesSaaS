@@ -13,6 +13,8 @@ gem "sprockets-rails"
 gem 'pg'
 
 gem 'dotenv'
+gem 'semantic-ui-sass'
+gem 'sass-rails'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
