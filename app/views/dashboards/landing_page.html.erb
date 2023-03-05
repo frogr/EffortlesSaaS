@@ -50,39 +50,40 @@
 
 
 <div class="ui inverted segment">
-  <div class="content">
-  <div>
-    <h2> Dev tools </h2>
-    <p>Sign up for the email letter:</p>
-    <%= form_for(Customer.new) do |f| %>
+  <div class="content wdevborder">
+    <div>
+      <h2> Dev tools </h2>
+      <p>Sign up for the email letter:</p>
+      <%= form_for(Customer.new) do |f| %>
+        <div>
+          <%= f.email_field :email_address, class: 'ui transparent input', placeholder: 'Email' %>
+          <%= f.submit 'Submit', class: 'ui secondary button' %>
+        </div>
+      <% end %>
+    </div>
+      
+    <div>
+      <p>Go to our buy page:</p>
       <div>
-        <%= f.email_field :email_address, class: 'ui transparent input', placeholder: 'Email' %>
-        <%= f.submit 'Submit', class: 'ui secondary button' %>
+        <a href="/buy">Link</a>
       </div>
-    <% end %>
+      <div>
+        <p>Go to our contact or about pages:</p>
+        <div>
+          <a href="/contact">Link</a>
+        </div>
+      </div>
+      <div>
+        <p>Go to our register page:</p>
+      </div>
+      <div>
+        <a href="/users/sign_up">Link</a>
+      </div>
+        <p>Go to our log in page:</p>
+      <div>
+        <a href="/users/sign_in">Link</a>
+      </div>
+    </div>
   </div>
-    
-<div>
-  <p>Go to our buy page:</p>
-  <div>
-    <a href="/buy">Link</a>
-  </div>
-</div>
-<div>
-  <p>Go to our contact or about pages:</p>
-  <div>
-    <a href="/contact">Link</a>
-  </div>
-</div>
-</div>
-<div>
-<p>Go to our register page:</p>
-<div>
-  <a href="/users/sign_up">Link</a>
-</div>
-<p>Go to our log in page:</p>
-<div>
-  <a href="/users/sign_in">Link</a>
-</div>
 </div>
 
