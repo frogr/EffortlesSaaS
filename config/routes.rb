@@ -5,4 +5,5 @@ resources :customers
   # Defines the root path route ("/")
   # root "articles#index"
   root "dashboards#landing_page"
+  get "buy", to: "dashboards#buy_page"
 end
