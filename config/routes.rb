@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   # root "articles#index"
   root "dashboards#landing_page"
   get "buy", to: "dashboards#buy_page"
+  post "dashboards/make_admin", to: "dashboards#make_admin"
+
 end

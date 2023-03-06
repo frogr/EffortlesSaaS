@@ -63,27 +63,49 @@
     </div>
       
     <div>
-      <p>Go to our buy page:</p>
       <div>
-        <a href="/buy">Link</a>
+        <a href="/buy">Go to our buy page</a>
       </div>
       <div>
-        <p>Go to our contact or about pages:</p>
         <div>
-          <a href="/contact">Link</a>
+          <a href="/contact">Go to our contact or about pages</a>
         </div>
       </div>
       <div>
-        <p>Go to our register page:</p>
       </div>
       <div>
-        <a href="/users/sign_up">Link</a>
+        <a href="/users/sign_up">Go to our register page</a>
       </div>
-        <p>Go to our log in page:</p>
       <div>
-        <a href="/users/sign_in">Link</a>
+        <a href="/users/sign_in">Go to our log in page</a>
       </div>
+      <div>
+        <div>
+          <a href="/admin">Go to our admin show page</a>
+        </div>
+      </div>
+
+
+        <div>
+          <%= button_to 'Log Out', destroy_user_session_path, method: :delete %>
+        </div>
     </div>
+
+    
+    <% if current_user == "" %>
+      <div class="ui inverted">
+        <h3>Not logged in</h3>
+      </div>
+    <% elsif current_user.admin? == false %>
+      <div>
+        <%= button_to 'Make me an admin', dashboards_make_admin_path, method: :post %>
+      </div>
+      <% if current_user.admin? %>
+        <div class="ui inverted">
+          <h3>Logged in as admin</h3>
+        </div>
+      <% end %>
+    <% end %>
   </div>
 </div>
 
