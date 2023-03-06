@@ -6,7 +6,7 @@
     <a class="item">
       Buy Now
     </a>    
-    <% if @current_user == "" %> 
+    <% if @current_user.nil? %> 
       <div class="item right">
         <%= link_to 'Sign up', '/users/sign_up' %>
       </div>
@@ -14,9 +14,9 @@
         <%= link_to 'Login', '/users/sign_in' %>
       </div>
     <% elsif @current_user %>
-      <a class="item right">
-        Log Out
-      </a>
+      <div class="item right">
+        <%= button_to 'Log Out', destroy_user_session_path, method: :delete, class: "ui secondary button" %>
+      </div>
       <% if current_user.admin? %>
         <div class="item">
         <%= link_to 'Admin', '/admin'%>
@@ -142,7 +142,7 @@
       <div class="ui inverted">
         <h3>Not logged in</h3>
       </div>
-    <% elsif current_user.admin? == false %>
+    <% elsif current_user&.admin? == false %>
       <div>
         <%= button_to 'Make me an admin', dashboards_make_admin_path, method: :post %>
       </div>
