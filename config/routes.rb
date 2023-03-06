@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   post "dashboards/make_admin", to: "dashboards#make_admin"
 
   get 'checkouts', to: "checkouts#new"
+  get 'admin', to: "dashboards#admin_page"
 
   resources :checkouts,  only: [:new, :create, :show]
 end
