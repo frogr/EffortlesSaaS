@@ -18,5 +18,9 @@ module EffortlesSaaS
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    # config/application.rb
+    Bundler.require(*Rails.groups)
+
+    require 'dotenv/load'
   end
 end

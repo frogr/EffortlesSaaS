@@ -9,4 +9,7 @@ Rails.application.routes.draw do
   get "buy", to: "dashboards#buy_page"
   post "dashboards/make_admin", to: "dashboards#make_admin"
 
+  get 'checkouts', to: "checkouts#new"
+
+  resources :checkouts,  only: [:new, :create, :show]
 end
