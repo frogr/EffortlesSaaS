@@ -4,6 +4,8 @@ body {
   margin: 0px;
   background-color: #1B1C1D;
   font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
 }
 
 .nav {
@@ -26,4 +28,8 @@ body {
 .whitesegment {
   background-color: white;
   color: black;
+}
+
+.bigger {
+  font-size: 1.3em !important;
 }
