@@ -9,8 +9,8 @@ Rails.application.routes.draw do
   get "buy", to: "dashboards#buy_page"
   post "dashboards/make_admin", to: "dashboards#make_admin"
 
-  get 'checkouts', to: "checkouts#new"
+  # get 'checkouts', to: "checkouts#new"
   get 'admin', to: "dashboards#admin_page"
 
-  resources :checkouts,  only: [:new, :create, :show]
+  # resources :checkouts,  only: [:new, :create, :show]
 end
