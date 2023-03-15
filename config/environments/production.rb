@@ -92,5 +92,4 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.secret_key_base = 'fd1025e65f562dc038ee222da5a0dfebc7b8a8d68d262fe7156eb38c696df81a4ef84c258b10cce07e007c55cebfdf59abf57c56089d7873dba5295401d84a7d'
-  config.assets.css_compressor = :yui
 end
