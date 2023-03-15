@@ -72,9 +72,6 @@ GEM
     bindex (0.8.1)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
-    braintree (4.10.0)
-      builder (>= 3.2.4)
-      rexml (>= 3.1.9)
     builder (3.2.4)
     capybara (3.38.0)
       addressable
@@ -245,7 +242,6 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
-  braintree
   capybara
   debug
   devise
@@ -257,6 +253,7 @@ DEPENDENCIES
   rails (~> 7.0.4, >= 7.0.4.2)
   redis (~> 4.0)
   sass-rails
+  sassc-rails
   selenium-webdriver
   semantic-ui-sass
   sprockets-rails

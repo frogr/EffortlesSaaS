@@ -16,7 +16,7 @@ gem 'dotenv'
 gem 'semantic-ui-sass'
 gem 'sass-rails'
 gem 'devise'
-gem 'braintree'
+gem 'sassc-rails'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
