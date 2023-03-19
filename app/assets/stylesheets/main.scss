@@ -24,6 +24,33 @@ body {
   max-width: 1000px;
 }
 
+.bullet-point {
+  position: relative;
+  padding-left: 20px;
+}
+
+.bullet-point::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  font-size: 20px;
+}
+.custom-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.custom-list-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.bullet {
+  font-size: 20px;
+  width: 30px;
+}
+
 .paddingbottom {
   padding-bottom: 250px !important;
 }
