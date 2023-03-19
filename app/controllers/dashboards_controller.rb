@@ -11,6 +11,7 @@ class DashboardsController < ApplicationController
     @current_user = check_current_user
     if current_user.admin == true
       @users = User.all
+      UserLogger.instance.log_user_info(@current_user)
     else
       redirect_to root_path, notice: "You are not an admin"
     end

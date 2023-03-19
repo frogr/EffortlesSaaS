@@ -22,5 +22,6 @@ module EffortlesSaaS
     Bundler.require(*Rails.groups)
 
     require 'dotenv/load'
+    config.autoload_paths << "#{Rails.root}/lib"
   end
 end
