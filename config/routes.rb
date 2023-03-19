@@ -7,7 +7,8 @@ Rails.application.routes.draw do
   # root "articles#index"
   root "dashboards#landing_page"
   get "buy", to: "dashboards#buy_page"
-  post "dashboards/make_admin", to: "dashboards#make_admin"
+  post "dashboards/make_admin", to: "dashboards#make_current_user_admin"
+  post "dashboards/make_admin", to: "dashboards#make_user_admin"
 
   # get 'checkouts', to: "checkouts#new"
   get 'admin', to: "dashboards#admin_page"

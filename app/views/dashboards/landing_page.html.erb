@@ -33,6 +33,7 @@
       </h1>
       <h2> I'll show you how! </h2>
       <div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
+      <div class="paddingbottom"></div>
     </div>
   </div>
 </div>
@@ -156,7 +157,7 @@
       </div>
     <% elsif current_user&.admin? == false %>
       <div>
-        <%= button_to 'Make me an admin', dashboards_make_admin_path, method: :post %>
+        <%= button_to 'Make me an admin', dashboards_make_current_user_admin_path, method: :post %>
       </div>
       <% if current_user.admin? %>
         <div class="ui inverted">
