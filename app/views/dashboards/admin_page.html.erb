@@ -1,1 +1,32 @@
-<h1> admin </h1>
+<div class="ui inverted segment">
+  <div class="text content center aligned">
+    <h1 class="ui inverted header">
+      Admin Dashboard
+    </h1>
+  </div>
+</div>  
+
+<div class="ui center aligned lessmaxwidth">
+  <table class="ui center aligned celled table">
+    <thead>
+      <tr>
+        <th>Email</th>
+        <th>Admin?</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <% @users.each do |user| %>
+      <tbody>
+        <tr>
+          <td><%= user.email %></td>
+          <td><%= user.admin? %></td>
+          <td><%= link_to 'Edit', edit_customer_path(user) %></td>
+          <td><%= link_to 'Delete', customer_path(user), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      </tbody>
+    <% end %>
+  </table>
+</div>
+
+<%= link_to 'Go home', root_path %>
