@@ -13,7 +13,10 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   margin: 0px;
+  padding: 0px;
+  width: 100%;
   background-color: #1B1C1D;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.05em;
@@ -22,6 +25,10 @@ body {
 
 .nomarg {
   margin: 0px !important;
+}
+
+.nomargbottom {
+  margin-bottom: 0px !important;
 }
 .lessmaxwidth {
   max-width: 1000px;
