@@ -1,40 +1,22 @@
-
+@charset "UTF-8";
 /* Base font size for mobile */
 html {
-  font-size: 26px !important;
-}
-
-.navmenu {
-  font-size: 20px !important;
+  font-size: 30px;
 }
 
 /* Increase font size for larger screens */
 @media (min-width: 768px) {
   html {
-    font-size: 32px !important;
-  }
-  .navmenu {
-    font-size: 26px !important;
-  }
-  @media (min-width: 1024px) {
-    html {
-      font-size: 38px !important;
-    }
-    .navmenu {
-      font-size: 26px !important;
-    }
+    font-size: 38px;
   }
 }
-
-
-
 body {
   overflow-x: hidden;
   margin: 0px;
   padding: 0px;
   width: 100%;
   background-color: rgb(27, 28, 29) !important;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 0.05em;
   line-height: 1.5em;
 }
@@ -46,6 +28,7 @@ body {
 .nomargbottom {
   margin-bottom: 0px !important;
 }
+
 .lessmaxwidth {
   max-width: 1000px;
 }
@@ -61,6 +44,7 @@ body {
   left: 0;
   font-size: 20px;
 }
+
 .custom-list {
   list-style-type: none;
   padding: 0;
@@ -82,7 +66,7 @@ body {
 }
 
 .nav {
-  margin: 0px; 
+  margin: 0px;
   padding: 0px;
   color: red;
 }
@@ -106,3 +90,5 @@ body {
 .bigger {
   font-size: 1.3em !important;
 }
+
+/*# sourceMappingURL=main.css.map */

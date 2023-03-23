@@ -1,5 +1,5 @@
 <div class="ui inverted nav">
-  <div class="ui inverted menu nomargbottom">
+  <div class="ui inverted menu navmenu">
     <a class="active item">
       Home
     </a>
@@ -100,14 +100,16 @@
   </div>
 </div>
 
-<div class="ui center aligned segment">
-  <h2>Sign up weekly emails covering Ruby on Rails content</h2>
-  <%= form_for(Customer.new) do |f| %>
-    <div>
+<div class="ui center aligned whitesegment emailbox">
+  <div class="ui center aligned text container">
+    <h2>Sign up weekly emails covering Ruby on Rails content</h2>
+    <%= form_for(Customer.new) do |f| %>
+    <div class="ui center aligned">
       <%= f.email_field :email_address, class: 'ui input bigger', placeholder: 'Email' %>
       <%= f.submit 'Submit', class: 'ui secondary button' %>
     </div>
   <% end %>
+  </div>
 </div>
 
 <div class="ui inverted center aligned segment">
